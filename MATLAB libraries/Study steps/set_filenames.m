@@ -23,16 +23,16 @@
 % Tel: 617-253-6966, Fax: 617-258-6790, email: tlo@mit.edu. 
 
 %% Input file names
-dataMesh='.\modeshapes_0.txt';                 %File that contains exported COMSOL data from linear analysis for mesh coordinates
-dataMidPlane='.\midplaneshapes_0.txt';         %File that contains exported COMSOL data from linear analysis for mid plane coordinates only 
-meshCoordinates='.\meshcoordinates_0.txt';     %File that contains mesh point coordinates
-midPlaneCoordinates='.\oldmidplane_0.txt';     %File that contains mid-plane coordinates of the top plate 
-originalMesh='.\oldmesh_0.mphtxt';             %Mesh is read from this file
-modifiedMesh='.\newmesh_0.mphtxt';             %New mesh is written to this file  
-modifiedMidPlane='.\newmidplane_0.txt';        %File that contains mid-plane coordinates with imperfection but before non-linear analysis
-LinearModelFile='.\linear_analysis_0.mph';        %New comsol format linear analysis model file
-NonlinearModelFile='.\nonlinear_analysis_0.mph';        %New comsol format non-linear analysis model file
-deformedMidPlane='.\deformedmidplane_0.txt';             %File to which the mid-plane coordinates are exported after non-linear analysis
+dataMesh='/modeshapes_0.txt';                 %File that contains exported COMSOL data from linear analysis for mesh coordinates
+dataMidPlane='/midplaneshapes_0.txt';         %File that contains exported COMSOL data from linear analysis for mid plane coordinates only 
+meshCoordinates='/meshcoordinates_0.txt';     %File that contains mesh point coordinates
+midPlaneCoordinates='/oldmidplane_0.txt';     %File that contains mid-plane coordinates of the top plate 
+originalMesh='/oldmesh_0.mphtxt';             %Mesh is read from this file
+modifiedMesh='/newmesh_0.mphtxt';             %New mesh is written to this file  
+modifiedMidPlane='/newmidplane_0.txt';        %File that contains mid-plane coordinates with imperfection but before non-linear analysis
+LinearModelFile='/linear_analysis_0.mph';        %New comsol format linear analysis model file
+NonlinearModelFile='/nonlinear_analysis_0.mph';        %New comsol format non-linear analysis model file
+deformedMidPlane='/deformedmidplane_0.txt';             %File to which the mid-plane coordinates are exported after non-linear analysis
 
 %% Set proper directory
 root=strcat(pwd,rootdir);                     

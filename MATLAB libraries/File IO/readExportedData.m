@@ -55,7 +55,12 @@ data.exp=str2double(header{3}(6));
 %Number of mode shapes or continuation parameter values
 data.nshapes=data.exp/data.dim;
 
+%Skip a title line
+fgetl(fid);
+fgetl(fid);
+
 %% Define the format of the rows
+
 if data.dim==1
     formatval='%f';
     for cnt=1:1:data.exp
